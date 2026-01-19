@@ -1,0 +1,88 @@
+.BookForm {
+  max-width: 600px;       
+  margin: 40px auto;      
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-family: "Georgia", "Garamond", serif;
+  color: #3e2f1c;
+}
+
+.FilterForm,
+.FormWrap {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  background-color: #fef8f0;
+  padding: 20px;
+  border: 2px solid #3e2f1c;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  width: 100%;
+  box-sizing: border-box; 
+}
+
+.FilterForm input,
+.FormWrap input,
+.FormWrap textarea {
+  width: 100%;
+  max-width: 100%;
+  padding: 10px 12px;
+  border: 2px solid #c9a66b;
+  border-radius: 8px;
+  font-size: 15px;
+  color: #3e2f1c;
+  background-color: #fffdf5;
+  outline: none;
+  transition: all 0.3s;
+  box-sizing: border-box; 
+}
+
+.FilterForm input:focus,
+.FormWrap input:focus,
+.FormWrap textarea:focus {
+  border-color: #d4af37;
+  box-shadow: 0 0 6px rgba(212, 175, 55, 0.4);
+}
+
+.FormWrap textarea {
+  min-height: 80px;
+  resize: vertical;
+}
+
+.ButtonWrap {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.ButtonWrap button {
+  padding: 12px 25px;
+  border: 2px solid #3e2f1c;
+  border-radius: 8px;
+  background-color: #3e2f1c;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+
+.ButtonWrap button:hover {
+  background-color: #d4af37;
+  color: #3e2f1c;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.BooksWraper {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+}
+
+.BooksDetailWraper {
+  max-width: 600px;
+  margin: 40px auto;
+}

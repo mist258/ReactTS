@@ -3,6 +3,7 @@ import type { IBook } from "../../interfaces/bookInterfaces"
 import { Books } from "../Books/Books"
 import { listOfBooks} from "../../Data/BooksData"
 import { BookDetails } from "../BooksDetail/BookDetails"
+import css from './booskApp.module.css'
 
 type NewBook = Omit<IBook, "id">;
 
@@ -77,17 +78,21 @@ export const BooksApp = () => {
 
     return (
 
-       <div>
+       <div className={css.BookForm}>
+
+        
             {
             selectedBookId === null ? (
             <>
+                <div className={css.FilterForm}>
                 <input
                     type="text"
                     placeholder="Filter by id, name, author"
                     value={filter}
                     onChange={e => setFilter(e.target.value)}
                 />
-
+                </div>
+                <div className={css.FormWrap}>
                 <input
                     name="name"
                     placeholder="Name"
@@ -111,6 +116,8 @@ export const BooksApp = () => {
 
                 <input
                     name="rating"
+                    placeholder="Rating"
+
                     type="number"
                     min={1}
                     max={5}
@@ -132,21 +139,28 @@ export const BooksApp = () => {
                     value={newBook.description}
                     onChange={handleChange}
                 />
+                </div>
 
-                <button onClick={addBook}>Add</button>
+                <div className={css.ButtonWrap}>
+                <button onClick={addBook}>Add book to list</button>
+                </div>
 
+                <div className={css.BooksWraper}>
                 <Books
                     books={filteredBooks}
                     onSelect={setSelectedBookId}
                 />
+                </div>
             </>
 
         ) : (
+            <div className={css.BooksDetailWraper}>
                 <BookDetails
                 book={books.find(b => b.id === selectedBookId)!}
                 onBack={() => setSelectedBookId(null)}
                 />
-        )
+            </div>
+        )   
        } 
         </div>
     )

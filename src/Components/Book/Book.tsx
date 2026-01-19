@@ -17,10 +17,10 @@ export const Book: FC<BookProps> = ({item, onSelect}) => {
         <>
         <div className={css.Book}>
             <img src={imgUrl} alt={name} width={270} />
-            <div>rating: {rating}</div>
-            <div>{name}</div>
-            <div>Genre: {genre}</div>
-            <div>{author}</div>
+            <p className={css.Rating}>{rating}</p>
+            <p className={css.Title}>{name}</p>
+            <p className={css.Genre}>Genre: {genre}</p>
+            <p className={css.Author}>{author}</p>
             <button onClick={() => onSelect(item.id)}>Next</button>
         </div>
       
