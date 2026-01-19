@@ -117,11 +117,7 @@ export const BooksApp = () => {
                 <input
                     name="rating"
                     placeholder="Rating"
-
                     type="number"
-                    min={1}
-                    max={5}
-                    step={1}
                     value={newBook.rating || ""}
                     onChange={handleChange}
                     style={{ appearance: "textfield" }}
