@@ -19,7 +19,7 @@ export const BookDetails: FC<BookDetailsProps> = ({ book, onBack }) => {
         width={200}
         onError={(e) => {
           e.currentTarget.src =
-            "https://upload.wikimedia.org/wikipedia/commons/a/a3/Image-not-found.png?20210521171500";
+            "https://www.flaggingdirect.com/images/No-Image-Placeholder.png";
         }}
       />
       <h2>{book.name}</h2>

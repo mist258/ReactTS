@@ -18,7 +18,7 @@ export const Book: FC<BookProps> = ({ item, onSelect }) => {
           alt={name}
           onError={(e) => {
             e.currentTarget.src =
-              "https://upload.wikimedia.org/wikipedia/commons/a/a3/Image-not-found.png?20210521171500";
+              "https://www.flaggingdirect.com/images/No-Image-Placeholder.png";
           }}
           width={270}
         />
