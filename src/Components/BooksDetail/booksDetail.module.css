@@ -2,11 +2,11 @@
   max-width: 700px;
   margin: 40px auto;
   padding: 30px 40px;
-  border: 2px solid #c9a66b; 
+  border: 2px solid #c9a66b;
   border-radius: 16px;
-  background-color: #fef8f0; 
-  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-  font-family: "Garamond", "Georgia", serif; 
+  background-color: #fef8f0;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  font-family: "Garamond", "Georgia", serif;
   color: #3e2f1c;
 }
 
@@ -14,10 +14,10 @@
   display: block;
   margin: 0 auto 30px auto;
   border-radius: 12px;
-  width: 100%;      
-  max-width: 400px; 
-  height: auto;     
-  box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
 }
 
 .BookDetails h2 {
@@ -27,7 +27,7 @@
   font-family: "Palatino Linotype", "Book Antiqua", serif;
   color: #2c1f0f;
   letter-spacing: 1px;
-  text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 .BookDetails p {
@@ -36,7 +36,7 @@
   line-height: 1.6;
 }
 
-.Author, 
+.Author,
 .Genre {
   font-style: italic;
   color: #4b3a2f;
@@ -44,12 +44,12 @@
 
 .Rating {
   font-weight: bold;
-  color: #d4af37; 
+  color: #d4af37;
   font-size: 20px;
 }
 
 .Rating::before {
-  content: "⭐ "; 
+  content: "⭐ ";
 }
 
 .Description {
@@ -92,5 +92,5 @@
   background-color: #c9a66b;
   color: #3e2f1c;
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
