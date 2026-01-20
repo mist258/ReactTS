@@ -8,7 +8,7 @@ interface BookProps {
 }
 
 export const Book: FC<BookProps> = ({ item, onSelect }) => {
-  let { name, author, imgUrl, genre, rating } = item;
+  const { name, author, imgUrl, genre, rating } = item;
 
   return (
     <>
