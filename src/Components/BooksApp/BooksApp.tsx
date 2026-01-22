@@ -53,10 +53,11 @@ export const BooksApp = () => {
 
     setNewBook((prev) => ({
       ...prev,
-      [name]: name === "rating" ? Number(value) : value,
+      [name]:
+        name === "rating" ? Math.min(Math.max(Number(value), 0), 5) : value,
     }));
   };
-
+    
   const addBook = () => {
     if (!newBook.name || !newBook.author) return;
 
