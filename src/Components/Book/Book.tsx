@@ -10,11 +10,17 @@ interface BookProps {
 export const Book: FC<BookProps> = ({ item, onSelect }) => {
   const { name, author, imgUrl, genre, rating } = item;
 
+  const imageUrl =
+  imgUrl && imgUrl.trim() !== ""
+    ? imgUrl
+    : "https://www.flaggingdirect.com/images/No-Image-Placeholder.png";
+
+
   return (
     <>
       <div className={css.Book}>
         <img
-          src={imgUrl}
+          src={imageUrl}
           alt={name}
           onError={(e) => {
             e.currentTarget.src =

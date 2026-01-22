@@ -11,10 +11,16 @@ interface BookDetailsProps {
 export const BookDetails: FC<BookDetailsProps> = ({ book, onBack }) => {
   const [isRead, setIsRead] = useState(book.isRead);
 
+  const imageUrl =
+  book.imgUrl && book.imgUrl.trim() !== ""
+    ? book.imgUrl
+    : "https://www.flaggingdirect.com/images/No-Image-Placeholder.png";
+
+
   return (
     <div className={css.BookDetails}>
       <img
-        src={book.imgUrl}
+        src={imageUrl}
         alt={book.name}
         width={200}
         onError={(e) => {

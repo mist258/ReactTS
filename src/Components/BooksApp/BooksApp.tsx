@@ -39,6 +39,8 @@ export const BooksApp = () => {
       : "1";
   };
 
+  
+
   const filteredBooks = books.filter(
     (book) =>
       book.id.includes(filter) ||
@@ -70,6 +72,7 @@ export const BooksApp = () => {
 
     setNewBook(emptyBook);
   };
+
 
   return (
     <div className={css.BookForm}>
